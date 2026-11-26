@@ -65,7 +65,7 @@ Arquivo: [`dados/inventario.xlsx`](dados/inventario.xlsx).
 ## 📁 Estrutura do repositório
 
 ```text
-desafio-01-diametro/
+desafio-diametro-eucalipto/
 ├── dados/
 │   └── inventario.xlsx            # inventário do talhão 8 (215 árvores)
 ├── scripts/
@@ -100,14 +100,14 @@ Rscript scripts/01_analise_diametro.R
 | # | Desafio | |
 |:-:|---|:-:|
 | **01** | **Diâmetro** | 📍 você está aqui |
-| 02 | [Altura e relação hipsométrica](https://github.com/danieldias936-cyber/desafio-02-altura) | |
-| 03 | [Volume e forma](https://github.com/danieldias936-cyber/desafio-03-volume-e-forma) | |
+| 02 | [Altura e relação hipsométrica](https://github.com/danieldias936-cyber/desafio_altura) | |
+| 03 | [Volume e forma](https://github.com/danieldias936-cyber/desafio_volume-e-forma) | |
 | 04 | [Volume reduzido e equações de volume](https://github.com/danieldias936-cyber/desafio-04-volume-reduzido-e-tabela) | |
-| 05 | [Taper e sortimento](https://github.com/danieldias936-cyber/desafio-05-taper-e-sortimento) | |
+| 05 | [Taper e sortimento](https://github.com/danieldias936-cyber/desafio_taper_e_sortimento) | |
 | 06 | [Amostragem de Bitterlich](https://github.com/danieldias936-cyber/desafio-06-bitterlich) | |
 | 07 | Classificação de sítios florestais | ⏳ |
-| 08 | [Validação do índice de sítio](https://github.com/danieldias936-cyber/desafio-08-validacao-sitio) | |
-| 09 | [Crescimento e produção (Clutter)](https://github.com/danieldias936-cyber/desafio-09-modelo-clutter) | |
+| 08 | [Validação do índice de sítio](https://github.com/danieldias936-cyber/desafio-08) | |
+| 09 | [Crescimento e produção (Clutter)](https://github.com/danieldias936-cyber/desafio-09) | |
 
 ## 👤 Autor
 
