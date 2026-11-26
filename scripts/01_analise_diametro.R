@@ -4,16 +4,20 @@
 #
 # Analise de auditoria e caracterizacao do DAP de um inventario
 # florestal real (6 parcelas, 215 arvores). Interpretacao completa
-# dos resultados em relatorio.md; criterio de QC em README.md.
+# dos resultados em docs/relatorio.pdf. Executar a partir da raiz:
+#   Rscript scripts/01_analise_diametro.R
 #############################################################
 
 library(readxl)
 library(dplyr)
 library(ggplot2)
 
+dir.create("resultados/tabelas", recursive = TRUE, showWarnings = FALSE)
+dir.create("resultados/figuras", recursive = TRUE, showWarnings = FALSE)
+
 # ===== Etapa 0: leitura e auditoria basica dos dados =====
 
-inventario <- read_excel("inventario.xlsx")
+inventario <- read_excel("dados/inventario.xlsx")
 
 dim(inventario)               # esperado: 215 linhas, 14 colunas
 colSums(is.na(inventario))    # esperado: zero NA em cada coluna
@@ -186,7 +190,7 @@ ggplot(inventario, aes(x = DAP)) +
        x = "DAP (cm)", y = "Densidade") +
   theme_minimal()
 
-ggsave("histograma_talhao.png", width = 8, height = 5, dpi = 300)
+ggsave("resultados/figuras/histograma_talhao.png", width = 8, height = 5, dpi = 300, bg = "white")
 
 stats_por_parcela <- inventario %>%
   group_by(PARCELA) %>%
@@ -209,4 +213,11 @@ ggplot(inventario, aes(x = DAP)) +
        x = "DAP (cm)", y = "Densidade") +
   theme_minimal()
 
-ggsave("histograma_parcelas.png", width = 9, height = 6, dpi = 300)
+ggsave("resultados/figuras/histograma_parcelas.png", width = 9, height = 6, dpi = 300, bg = "white")
+
+
+# ===== Exportacao das tabelas principais =====
+write.csv(estat_parcela, "resultados/tabelas/estatisticas_dap_parcela.csv", row.names = FALSE)
+write.csv(estat_talhao,  "resultados/tabelas/estatisticas_dap_talhao.csv",  row.names = FALSE)
+write.csv(tabela_classes_talhao, "resultados/tabelas/classes_dap_talhao.csv", row.names = FALSE)
+write.csv(g_parcela_ha,  "resultados/tabelas/area_basal_parcela.csv", row.names = FALSE)
