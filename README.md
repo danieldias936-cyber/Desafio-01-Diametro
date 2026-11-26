@@ -65,7 +65,7 @@ Arquivo: [`dados/inventario.xlsx`](dados/inventario.xlsx).
 ## 📁 Estrutura do repositório
 
 ```text
-desafio-diametro-eucalipto/
+Desafio-01-Diametro/
 ├── dados/
 │   └── inventario.xlsx            # inventário do talhão 8 (215 árvores)
 ├── scripts/
@@ -100,14 +100,14 @@ Rscript scripts/01_analise_diametro.R
 | # | Desafio | |
 |:-:|---|:-:|
 | **01** | **Diâmetro** | 📍 você está aqui |
-| 02 | [Altura e relação hipsométrica](https://github.com/danieldias936-cyber/desafio_altura) | |
-| 03 | [Volume e forma](https://github.com/danieldias936-cyber/desafio_volume-e-forma) | |
-| 04 | [Volume reduzido e equações de volume](https://github.com/danieldias936-cyber/desafio-04-volume-reduzido-e-tabela) | |
-| 05 | [Taper e sortimento](https://github.com/danieldias936-cyber/desafio_taper_e_sortimento) | |
-| 06 | [Amostragem de Bitterlich](https://github.com/danieldias936-cyber/desafio-06-bitterlich) | |
-| 07 | [Classificação de sítios florestais](https://github.com/danieldias936-cyber/desafio-07-classificacao-sitio) | |
-| 08 | [Validação do índice de sítio](https://github.com/danieldias936-cyber/desafio-08) | |
-| 09 | [Crescimento e produção (Clutter)](https://github.com/danieldias936-cyber/desafio-09) | |
+| 02 | [Altura e relação hipsométrica](https://github.com/danieldias936-cyber/Desafio-02-Altura) | |
+| 03 | [Volume e forma](https://github.com/danieldias936-cyber/Desafio-03-Volume-e-Forma) | |
+| 04 | [Volume reduzido e equações de volume](https://github.com/danieldias936-cyber/Desafio-04-Volume-Reduzido-e-Tabela) | |
+| 05 | [Taper e sortimento](https://github.com/danieldias936-cyber/Desafio-05-Taper-e-Sortimento) | |
+| 06 | [Amostragem de Bitterlich](https://github.com/danieldias936-cyber/Desafio-06-Bitterlich) | |
+| 07 | [Classificação de sítios florestais](https://github.com/danieldias936-cyber/Desafio-07-Classificacao-de-Sitios) | |
+| 08 | [Validação do índice de sítio](https://github.com/danieldias936-cyber/Desafio-08-Validacao-do-Sitio) | |
+| 09 | [Crescimento e produção (Clutter)](https://github.com/danieldias936-cyber/Desafio-09-Crescimento-e-Producao) | |
 
 ## 👤 Autor
 
